@@ -1,0 +1,79 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+nav {
+    margin-top: 1em;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    margin-right: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.hero {
+    background-color: #eee;
+    padding: 2em;
+    text-align: center;
+}
+
+.about {
+    padding: 2em;
+}
+
+.contact {
+    padding: 2em;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+form {
+    display: grid;
+    gap: 1em;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5em 1em;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+.container{
+    margin: 50px;
+}
+
+img{
+    height: 250px;
+}
