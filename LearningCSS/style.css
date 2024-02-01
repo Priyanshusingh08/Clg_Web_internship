@@ -1,0 +1,118 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.main {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 130px;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.main h1 {
+  font-weight: 300;
+}
+
+.nav button {
+  background: none;
+  outline: none;
+  box-shadow: none;
+  border-radius: 20rem;
+  border: 2px solid rgb(107, 107, 161);
+  padding: 15px;
+  color: white;
+}
+
+.main {
+  background-color: #37517e;
+}
+
+.nav li {
+  display: inline-block;
+  list-style: none;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.container {
+  display: flex;
+  padding: 20px;
+  height: 80%;
+  background-color: #37517e;
+}
+
+.left {
+  width: 50%;
+  padding: 50px 0;
+  text-align: center;
+  color: white;
+  margin-left: 110px;
+}
+
+.left h1 {
+  text-align: left;
+  font-size: 60px;
+  font-weight: 800;
+}
+.left h2 {
+  margin-top: 20px;
+  text-align: left;
+  word-spacing: 10px;
+  font-weight: 500;
+  color: rgb(188, 181, 181);
+}
+.right {
+  width: 50%;
+  padding: 20px 50px;
+}
+
+.right img {
+  height: 450px;
+}
+
+.brand li {
+  display: inline-block;
+  padding: 20px;
+}
+
+.brand ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.brand img {
+  height: 50px;
+}
+.btn{
+    margin-top: 20px;
+}
+.btn button{
+    background: none;
+    outline: none;
+    box-shadow: none;
+    border-radius: 20rem;
+    border: 2px solid rgb(107, 107, 161);
+    padding: 10px;
+    margin-right: 15px;
+    color: white;
+    font-weight: 600;
+    padding: 15px;
+    font-size: 15px;
+    margin-top: 50px;
+}
+.left .get{
+    border: 2px solid rgb(107, 107, 161);
+    background-color: #47b2e4
+    
+}
