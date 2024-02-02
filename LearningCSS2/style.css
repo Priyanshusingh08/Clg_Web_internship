@@ -1,0 +1,106 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.nav img {
+  height: 40px;
+  margin-left: 180px;
+}
+
+h1 {
+  color: #04625a;
+  padding: 10px;
+  margin-right: 20px;
+}
+
+.menu {
+  width: 100%;
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  justify-content: start;
+}
+
+li {
+  display: inline-block;
+  text-decoration: none;
+  margin: 10px 10px;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav button {
+  text-decoration: none;
+  border: none;
+  background: none;
+  border: 2px solid #04625a;
+  padding: 15px;
+  border-radius: 0.5rem;
+  margin-left: 600px;
+}
+
+.hero {
+  display: flex;
+  height: 85%;
+}
+
+.left,
+.right {
+  height: 80%;
+  width: 50%;
+}
+.left {
+  padding: 100px;
+  background-color: rgb(8, 72, 69);
+}
+.right {
+  background-image: url(girl.png);
+}
+
+.inner {
+  padding-left: 50px;
+  color: white;
+}
+.inner h2 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+h4 {
+  font-weight: 400;
+  word-spacing: 7px;
+}
+
+.inner button {
+  margin-top: 50px;
+  margin-bottom: 10px;
+  color: #04625a;
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+  background: none;
+  padding: 20px;
+  border-radius: 0.5rem;
+  background-color: rgb(239, 193, 100);
+}
+.inner {
+  margin-left: 35px;
+}
+.free {
+  background-color: #a6d3d0;
+  padding: 10px;
+  border-radius: 0.5rem;
+  color: #04625a;
+}
