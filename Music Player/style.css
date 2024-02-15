@@ -1,0 +1,81 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  color: white;
+}
+
+.head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(43, 35, 35);
+  width: 100%;
+  height: 10%;
+}
+
+.main {
+  padding: 50px;
+  display: flex;
+  width: 100%;
+  height: 80%;
+
+  background-color: rgb(20, 17, 17);
+}
+
+.left {
+  padding: 30px;
+  width: 60%;
+  height: 100%;
+  background-color: rgb(20, 17, 17);
+}
+.right {
+  width: 40%;
+  height: 100%;
+  background-image: url("https://images.indianexpress.com/2024/01/Poster-of-Animal.jpeg");
+  background-size: cover;
+  background-position-x: center;
+}
+
+.card {
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(46, 45, 45);
+  margin-bottom: 5px;
+
+  padding-left: 5px;
+  padding-right: 10px;
+}
+
+.card:hover {
+  background-color: rgb(66, 63, 63);
+}
+
+img {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.control {
+  width: 100%;
+  height: 10%;
+  background-color: rgb(20, 18, 18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+h4 {
+  padding: 16px;
+  background-color: rgb(60, 44, 74);
+  border-radius: 50%;
+}

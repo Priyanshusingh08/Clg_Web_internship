@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="screen">
+            <div class="screen__content">
+                <form class="login" action="/join">
+                    <div class="login__field">
+                        <i class="login__icon fas fa-user"></i>
+                        <input type="text" class="login__input" placeholder="User name " name="name">
+                    </div>
+                    <button class="button login__submit">
+                        <span class="button__text">Log In Now</span>
+                        <i class="button__icon fas fa-chevron-right"></i>
+                    </button>	
+                    <div class="social-login">
+                        <h3><a href="javascript:show()" class="social-login__icon fab fa-instagram">login</a></h3>
+                    </div>			
+                </form>
+               
+            </div>
+
+
+            <div class="screen_content2">
+                <form class="login screen_content2" action="/joinold">
+                    <div class="login__field">
+                        <i class="login__icon fas fa-user"></i>
+                        <input type="text" class="login__input" placeholder="User name " name="name">
+                    </div>
+                    <div class="login__field">
+                        <i class="login__icon fas fa-lock"></i>
+                        <input type="text" class="login__input" placeholder="Room id" >
+                    </div>
+                    <button class="button login__submit">
+                        <span class="button__text">Join</span>
+                        <i class="button__icon fas fa-chevron-right"></i>
+                    </button>	
+                    <div class="social-login">
+                        <h3><a href="javascript:show()" class="social-login__icon fab fa-instagram">Host Meeting</a></h3>
+                    </div>			
+                </form>
+               
+            </div>
+
+
+
+
+            <div class="screen__background">
+                <span class="screen__background__shape screen__background__shape4"></span>
+                <span class="screen__background__shape screen__background__shape3"></span>		
+                <span class="screen__background__shape screen__background__shape2"></span>
+                <span class="screen__background__shape screen__background__shape1"></span>
+            </div>		
+        </div>
+    </div>
+
+    <script>
+        function show() {
+            $('form').animate({ height:"toggle",opacity:"toggle"},"slow")
+        }
+    </script>
+    
+</body>
+</html>
