@@ -1,0 +1,37 @@
+html,
+body {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: rgb(15, 13, 13);
+}
+
+.menu {
+  position: absolute;
+  bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border: 1px solid black;
+  background-color: rgb(41, 29, 29);
+  border-radius: 10rem;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  margin: 5px;
+  border: none;
+  padding: 20px;
+  border-radius: 10rem;
+}
