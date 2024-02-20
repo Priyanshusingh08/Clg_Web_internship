@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+      }
+      .color {
+        position: absolute;
+        bottom: 40px;
+        color: aliceblue;
+        background-color: rgb(45, 41, 41);
+        padding: 25px;
+        border: none;
+        border-radius: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <button id="Color" class="color" onclick="generateColor()">
+        Random Color
+      </button>
+    </div>
+
+    <script>
+      function generateColor() {
+        let str = "0123456789ABCDEF";
+        let color = "#";
+        for (let i = 0; i < 6; i++) {
+          color += str.charAt(Math.floor(Math.random() * 16));
+        }
+        console.log(color);
+
+        document.body.style.backgroundColor = color;
+      }
+    </script>
+  </body>
+</html>
