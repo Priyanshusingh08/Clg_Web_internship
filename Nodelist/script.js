@@ -9,6 +9,13 @@ const dataSet = [];
 
 form.addEventListener("submit", function (e) {
   e.preventDefault();
+  const date = new Date();
+  const formattedDate = date.toISOString().split("T")[0];
+  const hours = date.getHours();
+  const minutes = date.getMinutes();
+  const seconds = date.getSeconds();
+
+  const timeString = `${hours}:${minutes}:${seconds}`;
 
   var titledata = title.value;
   var descdata = desc.value;
@@ -17,7 +24,7 @@ form.addEventListener("submit", function (e) {
   if (titledata === "" || descdata === "") alert("Fields are empty");
   else {
     empty.remove();
-    dataSet.push({ titledata, descdata });
+    dataSet.push({ id, titledata, descdata, formattedDate, timeString });
 
     var todo = document.createElement("div");
 
@@ -27,7 +34,7 @@ form.addEventListener("submit", function (e) {
 >
   <h1 class="mt-6 text-xl font-semibold p-2">${titledata}</h1>
   <h3>${descdata}</h3>
-  <h4>Time</h4>
+  <h4 class="text-slate-500 font-xs">Date:${formattedDate} <br>  Time:${timeString}</h4>
   <button  id="${id}remove"
     class="bg-red-500 p-1 w-1/2 rounded-lg absolute bottom-4 right-4"
     id="remove"
@@ -46,7 +53,8 @@ form.addEventListener("submit", function (e) {
 foot.addEventListener("click", function (e) {
   console.log(document.getElementById(e.target.id).parentElement.id);
   document
-    .getElementById(document.getElementById(e.target.id).parentElement.id).remove();
+    .getElementById(document.getElementById(e.target.id).parentElement.id)
+    .remove();
 });
 
 // const childElement = document.getElementById("child-element");
