@@ -7,9 +7,10 @@ var empty = document.querySelector("#empty");
 
 const dataSet = [];
 
+
 form.addEventListener("submit", function (e) {
   e.preventDefault();
-
+  todo.innerHTML = cluster;
   var titledata = title.value;
   var descdata = desc.value;
   var id = Math.floor(e.timeStamp);
@@ -21,21 +22,24 @@ form.addEventListener("submit", function (e) {
 
     var todo = document.createElement("div");
 
-    todo.innerHTML = `<div
-  id="${id}"
-  class="card shadow-xl relative bg-zinc-200 p-5 w-[250px] h-[250px] text-black flex flex-col items-center rounded-lg"
->
-  <h1 class="mt-6 text-xl font-semibold p-2">${titledata}</h1>
-  <h3>${descdata}</h3>
-  <h4>Time</h4>
-  <button  id="${id}remove"
-    class="bg-red-500 p-1 w-1/2 rounded-lg absolute bottom-4 right-4"
-    id="remove"
-    
-  >
-    Delete
-  </button>
-</div>`;
+    dataSet.forEach(function (ele) {
+       cluster += `<div
+        id="${ele.id}"
+        class="card shadow-xl relative bg-zinc-200 p-5 w-[250px] h-[250px] text-black flex flex-col items-center rounded-lg"
+      >
+        <h1 class="mt-6 text-xl font-semibold p-2">${ele.titledata}</h1>
+        <h3>${ele.descdata}</h3>
+        <h4>Time</h4>
+        <button  id="${ele.id}remove"
+          class="bg-red-500 p-1 w-1/2 rounded-lg absolute bottom-4 right-4"
+          id="remove"
+          
+        >
+          Delete
+        </button>
+      </div>`;
+      todo.innerHTML = cluster;
+    });
 
     console.log(e.target.id);
 
@@ -45,9 +49,10 @@ form.addEventListener("submit", function (e) {
 
 foot.addEventListener("click", function (e) {
   console.log(document.getElementById(e.target.id).parentElement.id);
-  document
-    .getElementById(document.getElementById(e.target.id).parentElement.id)
-    .remove();
+  document.getElementById(
+    document.getElementById(e.target.id).parentElement.id
+  ).style.display = "none";
+  // .remove();
 });
 
 // const childElement = document.getElementById("child-element");
