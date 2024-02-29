@@ -14,9 +14,7 @@ form.addEventListener("submit", function (e) {
   const hours = date.getHours();
   const minutes = date.getMinutes();
   const seconds = date.getSeconds();
-
   const timeString = `${hours}:${minutes}:${seconds}`;
-
   var titledata = title.value;
   var descdata = desc.value;
   var id = Math.floor(e.timeStamp);
