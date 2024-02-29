@@ -46,8 +46,7 @@ form.addEventListener("submit", function (e) {
 foot.addEventListener("click", function (e) {
   console.log(document.getElementById(e.target.id).parentElement.id);
   document
-    .getElementById(document.getElementById(e.target.id).parentElement.id).style.display="none";
-    //.remove();
+    .getElementById(document.getElementById(e.target.id).parentElement.id).remove();
 });
 
 // const childElement = document.getElementById("child-element");
