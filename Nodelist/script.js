@@ -38,7 +38,7 @@ form.addEventListener("submit", function (e) {
     id="remove"
     
   >
-    Delete
+  <i class="fa-light fa-trash"></i>
   </button>
 </div>`;
 
