@@ -31,6 +31,12 @@ var music = [
     duration: "3:33",
     url: "./songs/Hua Main.mp3",
   },
+  {
+    name: "Hua mai",
+    image: "https://i.ytimg.com/vi/M-U-XavSH_8/sddefault.jpg",
+    duration: "3:33",
+    url: "./songs/Hua Main.mp3",
+  },
 ];
 
 var cluster = "";
